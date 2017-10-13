@@ -24,14 +24,14 @@ function draw() {
     
     background(255);
     if (angle > Math.PI) {
-        fact = 0.92;
+        fact = 0.99;
         iter++;
     }
     else if (angle < to_radian(1)) {
         fact = 1.02;
         iter++;
     }
-    if (iter > 2 && angle >= stopAngle) {
+    if (iter > 0 && angle <= stopAngle) {
         noLoop();
     }
 //    angle = to_radian(25);

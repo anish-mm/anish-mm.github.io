@@ -8,7 +8,8 @@ a:link, a:visited {text-decoration: none; color:rgb(220,220,220);}
     display: block;
     color: rgb(220,220,220);
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-    font-style: oblique;
+    font-style: normal;
+    font-weight: 900;
     text-align: center;
 }
 
