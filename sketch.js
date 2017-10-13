@@ -1,8 +1,10 @@
 var angle = to_radian(1);
+var stopAngle = to_radian(24);
 var lenOrig;
-var fact = 1.01;
+var fact = 1.02;
 var stop = false;
 var inCanvasScope = false;
+var iter = 0;
 
 function setup() {
     
@@ -22,10 +24,15 @@ function draw() {
     
     background(255);
     if (angle > Math.PI) {
-        fact = 0.9;
+        fact = 0.92;
+        iter++;
     }
     else if (angle < to_radian(1)) {
-        fact = 1.01;
+        fact = 1.02;
+        iter++;
+    }
+    if (iter > 2 && angle >= stopAngle) {
+        noLoop();
     }
 //    angle = to_radian(25);
     angle = fact * angle;
@@ -64,11 +71,6 @@ function to_radian(x) {
     return (Math.PI * x) / 180;
 }
 
-//body.onresize = function(){
-//     winHeight = windowHeight < 400 ? windowHeight : 400;
-//    resizeCanvas(windowWidth, winHeight);
-//    redraw();
-//}
 function mousePressed() {
 
     if (stop && inCanvasScope) {
