@@ -1,23 +1,57 @@
 body {
     background-color: rgb(45,45,45);
+    color: rgb(220,220,220);
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
 }
 
-a:link, a:visited {text-decoration: none; color:rgb(220,220,220);}
+a:link, a:visited {
+    text-decoration: none;
+    color:rgb(45, 45, 45);
+}
+
+.row-eq-height {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
 
 #personalInfo {
     display: block;
+/*
     color: rgb(220,220,220);
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+*/
     font-style: normal;
     font-weight: 900;
     text-align: center;
 }
 
 #links {
+/*
     color: rgb(220,220,220);
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
-    font-style: oblique;    
+*/
+    background: transparent;
+/*
+    padding: 0;
+    margin: 0;
+*/
+    font-style: normal;    
     text-decoration: none;
+}
+
+#links ul {
+    padding:0 0 0 0;
+    color: rgb(45, 45, 45);
+}
+
+#links li {
+    display:block;
+    padding: 8px 0 7px 0;
+    margin:0;
+    line-height: 2;
+    background: rgb(220,220,220);
+    color: rgb(45, 45, 45);    
 }
 
 /*prevent scroll-x*/

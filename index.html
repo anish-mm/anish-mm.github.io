@@ -18,6 +18,13 @@
   </head>
   <body>
       <!-- xs -fone, sm- tablet, md-desktop, lg-large desktop-->
+<!--
+        <nav class="navbar navbar-default navbar-fixed-top">
+         <div clas="container">
+            <h3>hithere</h3>   
+         </div>
+        </nav>
+-->
       <div id="fractalTree"></div>
       <div class="container">
     <div class="row">
@@ -28,15 +35,28 @@
         <h2>3<sup>rd</sup> Year Undergraduate Student<br />
         Department of Computer Science and Engineering<br />
         Indian Institute of Technology, Palakkad</h2>
+        <br />
+        <br />
     </div>
-    <div class="row" id="links">
-        <div class="col-md-8"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-3">
-            <ul>
+    <div class="row row-eq-height">
+        <div class="col-md-8" id="aboutMe">
+        </div>
+<!--        <div class="col-md-1"></div>-->
+        <div class="col-md-4"  id="links">
+            <ul class="nav nav-pills nav-stacked">
                 <li><a href="files/anishmmresume.pdf" target="_blank">RESUME</a></li>
                 <li><a href="">PROJECTS</a></li>
-                <li><a href="">COURSES TAKEN</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ACADEMIC TRANSCRIPTS <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="files/anish-sem1-at.pdf">Semester 1</a></li>
+                        <li><a href="files/anish-sem2-at.pdf">Semester 2</a></li>
+                        <li><a href="files/anish-sem3-at.pdf">Semester 3</a></li>
+                        <li><a href="files/anish-sem4-at.pdf">Semester 4</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="#">COURSES TAKEN</a></li>
                 <li><a href="">CURRENT ADVENTURES</a></li>
             </ul>  
         </div>
