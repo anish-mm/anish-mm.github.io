@@ -20,6 +20,11 @@ a:link, a:visited {text-decoration: none; color:rgb(220,220,220);}
     text-decoration: none;
 }
 
+/*prevent scroll-x*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 .centered {
     align-self: center;
