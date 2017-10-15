@@ -7,21 +7,21 @@ var inCanvasScope = false;
 var iter = 0;
 
 function setup() {
-    
+
    //get height and width paramenters for canvas
-    var winHeight = windowHeight < 400 ? windowHeight : 400; 
+    var winHeight = windowHeight < 400 ? windowHeight : 400;
     var winWidth  = 400;
     var myCanvas = createCanvas(windowWidth, winHeight);
     myCanvas.parent("fractalTree");
     lenOrig = 0.25 * height;
-    
+
     //to keep track of mouse movement.
     myCanvas.mouseOver(function() {inCanvasScope = true;});
     myCanvas.mouseOut(function() {inCanvasScope = false;});
 }
 
 function draw() {
-    
+
     background(255);
     if (angle > Math.PI) {
         fact = 0.99;
@@ -44,9 +44,9 @@ function draw() {
         stroke(45);
         strokeWeight(len * 4 / lenOrig);
         line(0, 0, 0, -len);
-        
+
         translate(0, -len);
-        
+
         if (len > 4) {
             push();
             rotate(angle);
@@ -80,6 +80,6 @@ function mousePressed() {
         noLoop();
     }
     stop = !stop;
-    
+
 }
 
