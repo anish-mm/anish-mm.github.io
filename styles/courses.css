@@ -1,0 +1,21 @@
+body {
+    background: rgb(45, 45, 45);
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+/*  border: 1px solid black;*/
+  background: rgb(220, 220, 220);  
+}
+
+th {
+    text-align: left;
+}
+
+caption {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(220, 220, 220);
+}
