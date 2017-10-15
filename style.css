@@ -2,6 +2,7 @@ body {
     background-color: rgb(45,45,45);
     color: rgb(220,220,220);
     font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 a:link, a:visited {
@@ -9,9 +10,12 @@ a:link, a:visited {
     color:rgb(45, 45, 45);
 }
 
+/*
 div#links.col_md_4 {
     background: rgb(220, 220, 220);
+    border-radius: 30px;
 }
+*/
 
 @media only screen and (min-width : 768px) {
     .is-table-row {
@@ -37,7 +41,7 @@ div#links.col_md_4 {
 }
 
 #links {
-    background: transparent;
+/*    background: transparent;*/
     font-style: normal;
     text-decoration: none;
 }

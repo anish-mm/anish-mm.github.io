@@ -5,13 +5,16 @@ body {
 
 table {
   border-collapse: separate;
-  border-spacing: 10px 0;
-/*  border: 1px solid black;*/
   background: rgb(220, 220, 220);  
 }
 
-th {
+th, td {
     text-align: left;
+    padding-left: 10px;
+}
+
+tr:hover {
+    background: rgb(230, 230, 230);
 }
 
 caption {
