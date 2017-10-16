@@ -1,0 +1,40 @@
+body {
+    background: rgb(45, 45, 45);
+    font-family: 'Roboto Condensed', 'Roboto', sans-serif;
+}
+
+table {
+  border-collapse: separate;
+  background: rgb(220, 220, 220);
+  text-align: justify;
+  align-self: center;
+  align-items: center;
+}
+
+th, td {
+    text-align: left, justify;
+    vertical-align: text-top;
+    padding: 0 10px 0 10px;
+    
+}
+
+tr:hover {
+    background: rgb(230, 230, 230);
+}
+
+caption {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(220, 220, 220);
+}
+
+.centered {
+    align-self: center;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: black;
+    font-style: normal;
+/*    text-decoration: none;*/
+}
