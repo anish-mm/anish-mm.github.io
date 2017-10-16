@@ -15,7 +15,7 @@ th, td {
     text-align: left, justify;
     vertical-align: text-top;
     padding: 0 10px 0 10px;
-    
+
 }
 
 tr:hover {
@@ -38,3 +38,4 @@ a:link, a:visited {
     font-style: normal;
 /*    text-decoration: none;*/
 }
+
